@@ -35,4 +35,4 @@ ShipTurrets is distributed under the MIT License.
 
 # Acknowledgments
 
-Shout out to [GoldenKitten](https://github.com/goldenkittenplays) for their work the [FairAI](https://thunderstore.io/c/lethal-company/p/TheFluff/FairAI/) mod and sharing their open-source code on their turret AI for attacking enemies in Lethal Company.
+Shout out to [GoldenKitten](https://github.com/goldenkittenplays) for their work on the [FairAI](https://thunderstore.io/c/lethal-company/p/TheFluff/FairAI/) mod and sharing their open-source code on their turret AI for attacking enemies in Lethal Company.

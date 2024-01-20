@@ -15,7 +15,7 @@ namespace ShipTurrets.Patches
         public static float viewRadius = 20f;
         public static float viewAngle = 180f;
 
-        public static float missChance = 0.99f;
+        public static float missChance = 0.97f;
 
         private static Vector3 turretLocFront = new Vector3(8.90f, 8.19f, -14.09f);
         private static Vector3 turretLocRear = new Vector3(-5.04f, 6.40f, -14.12f);
@@ -56,6 +56,22 @@ namespace ShipTurrets.Patches
                 enemies = GetEnemies(GetTargets(__instance));
                 if (!TargetEnemies(__instance, enemies) && (turretModeLastFrame == TurretMode.Firing || turretModeLastFrame == TurretMode.Berserk))
                     __instance.turretMode = TurretMode.Detection;
+
+                if(Plugin.isTurretFF.Value)
+                {
+                    if (__instance.CheckForPlayersInLineOfSight(3f) == GameNetworkManager.Instance.localPlayerController)
+                    {
+                        if (GameNetworkManager.Instance.localPlayerController.health - 34 > 0)
+                        {
+                            GameNetworkManager.Instance.localPlayerController.DamagePlayer(34, hasDamageSFX: true, callRPC: true, CauseOfDeath.Gunshots);
+                        }
+                        else
+                        {
+                            GameNetworkManager.Instance.localPlayerController.KillPlayer(__instance.aimPoint.forward * 40f, spawnBody: true, CauseOfDeath.Gunshots);
+                        }
+                    }
+                }
+                
                 return;
             }
         }
