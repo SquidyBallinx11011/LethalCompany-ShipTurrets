@@ -2,6 +2,8 @@
 
 This is the source-code for the Ship Turrets mod for Lethal Company the game. This mode works using [Harmony](https://harmony.pardeike.net/articles/patching.html) for adding patches/plugins to existing Lethal Company .Net assembly code.
 
+<a href="https://imgur.com/UYpyzaJ"><img src="https://i.imgur.com/UYpyzaJ.png" title="source: imgur.com" /></a>
+
 # Setup
 
 Follow the guide at the [Lethal Company Wiki](https://lethal.wiki/) for instructions on setting this projetc up and building it.
