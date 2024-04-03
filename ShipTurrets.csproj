@@ -43,4 +43,9 @@
        <HintPath>D:\Modding\lethal_company\Dependencies\UnityEngine.AIModule.dll</HintPath>
      </Reference>
   </ItemGroup>
+  <ItemGroup>
+     <Reference Include="TerminalApi">
+       <HintPath>D:\Modding\lethal_company\Squidy_first_mod\MyFirstPlugin\dependencies\TerminalApi.dll</HintPath>
+     </Reference>
+  </ItemGroup>
 </Project>

@@ -136,7 +136,7 @@ namespace ShipTurrets.Patches
             targets.ForEach(delegate(EnemyAICollisionDetect target)
             {
                 //Check if enemy is live.
-                if (!target.mainScript.isEnemyDead)
+                if (!target.mainScript.isEnemyDead && (target.mainScript.enemyType.enemyName != "Manticoil" && target.mainScript.enemyType.enemyName != "Red Locust Bees" && target.mainScript.enemyType.enemyName != "Docile Roaming Locust"))
                 {
                     retList.Add(target);
                 }

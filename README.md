@@ -8,6 +8,10 @@ This is the source-code for the Ship Turrets mod for Lethal Company the game. Th
 
 Follow the guide at the [Lethal Company Wiki](https://lethal.wiki/) for instructions on setting this projetc up and building it.
 
+# Dependencies
+
+* [TerminalAPI](https://thunderstore.io/c/lethal-company/p/NotAtomicBomb/TerminalApi/)
+
 # File Structure
 
 ```bash
