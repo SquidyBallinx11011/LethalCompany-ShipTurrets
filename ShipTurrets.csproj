@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Reference Include="TerminalApi">
-       <HintPath>D:\Modding\lethal_company\Squidy_first_mod\MyFirstPlugin\dependencies\TerminalApi.dll</HintPath>
+       <HintPath>D:\Modding\lethal_company\Dependencies\TerminalApi.dll</HintPath>
      </Reference>
   </ItemGroup>
 </Project>

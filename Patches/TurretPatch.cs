@@ -67,7 +67,7 @@ namespace ShipTurrets.Patches
                         }
                         else
                         {
-                            GameNetworkManager.Instance.localPlayerController.KillPlayer(__instance.aimPoint.forward * 40f, spawnBody: true, CauseOfDeath.Gunshots);
+                            GameNetworkManager.Instance.localPlayerController.KillPlayer(__instance.aimPoint.forward * 40f, spawnBody: true, CauseOfDeath.Gunshots, deathAnimation: 0, positionOffset: default(Vector3));
                         }
                     }
                 }
@@ -154,7 +154,7 @@ namespace ShipTurrets.Patches
                 if(UnityEngine.Random.Range(0f, 1f) > missChance)
                 {
                     //Shot hit the the enemy. Probably killed them.
-                    visibleEnemies[0].mainScript.HitEnemyOnLocalClient(3);
+                    visibleEnemies[0].mainScript.HitEnemyOnLocalClient(3,default(Vector3), (PlayerControllerB)null, false, -1);
                     Plugin.logger.LogInfo((object)(visibleEnemies[0].mainScript.enemyType.enemyName + " was hit."));
                     ret = true;
                 }
